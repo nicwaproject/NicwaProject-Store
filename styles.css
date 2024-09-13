@@ -1,0 +1,259 @@
+/* Reset and Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Oswald", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    line-height: 1.6;
+    color: var(--text-color);
+}
+
+/* Headings */
+h1, h2, h3 {
+    color: var(--primary-color);
+    margin: 20px 0;
+}
+
+/* Section Styles */
+section {
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+/* Slogan Section */
+#slogan {
+    position: relative; /* Pastikan #slogan punya posisi relative agar pseudo-element bekerja */
+    background-image: url('background1.JPG');
+    background-size: cover;
+    background-position: center;
+    padding: 100px 20px;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    height: 100vh;
+    z-index: 1; /* Pastikan konten berada di atas overlay */
+}
+
+#slogan::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3); /* Warna overlay hitam semi-transparan */
+    z-index: -1; /* Overlay berada di bawah konten */
+}
+
+
+#slogan h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: var(--text-color); /* Warna teks putih untuk kontras */
+}
+
+#slogan p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+
+/* Button Styles */
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: var(--primary-color);
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: var(--secondary-color); /* Darker blue for hover effect */
+    color: black;
+}
+
+/* Themes Section */
+
+#themes-item {
+    display: flex;
+    flex-direction: row; /* Ubah menjadi row untuk sejajar horizontal */
+    justify-content: space-evenly; /* Atur jarak horizontal antar elemen */
+    align-items: center; /* Atur elemen agar sejajar di bagian atas */
+    flex-wrap: wrap; /* Membungkus elemen ke baris berikutnya jika tidak muat di satu baris */
+    gap: 20px; /* Menambahkan jarak antar elemen tema */
+    padding: 30px;
+}
+
+.theme {
+    flex: 1 1 300px; /* Mengatur ukuran minimum dan responsif */
+    max-width: 420px;
+    margin: 20px 0;
+    text-align: center;
+}
+
+.theme h3 {
+    background-color: var(--primary-color);
+    color: var(--text-color);
+    border-radius: 30px;
+    font-size: 1.2rem;
+}
+
+.theme-preview {
+    width: 100%;
+    height: 600px; /* Tinggi yang disesuaikan agar tampak utuh */
+    border: 2px solid var(--primary-color);
+    border-radius: 10px;
+    padding: 10px;
+}
+
+
+/* Order Section */
+#whatsapp-order {
+    background-color: #f9f9f9;
+    padding: 40px;
+    text-align: center;
+  }
+  
+  .order-container {
+    max-width: 500px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .order-container h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+  }
+  
+  .form-group {
+    margin-bottom: 15px;
+    text-align: left;
+  }
+  
+  .form-group label {
+    display: block;
+    font-weight: bold;
+  }
+  
+  .form-group input,
+  .form-group select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  button#order-button {
+    font-family: "Oswald", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    background-color: var(--primary-color);
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top: 20px;
+  }
+  
+  button#order-button:hover {
+    background-color: var(--secondary-color);
+    color: black;
+  }
+    
+/* Mengubah font pada elemen select */
+select {
+    font-family: "Oswald", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  /* Mengubah font pada elemen input */
+  input {
+    font-family: "Oswald", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  /* Tambahan styling agar tampilan lebih konsisten */
+  input[type="text"],
+  select {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  
+
+
+/* Footer Styles */
+footer {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+footer p {
+    margin: 10px 0;
+}
+
+/* Root Variables */
+:root {
+    --primary-color: #5E503B; /* Blue color from the logo */
+    --secondary-color: #CCBBA6; /* Neutral or white background color */
+    --text-color: #fff; /* Main text color */
+}
+
+
+/* Styles for small screens */
+@media (max-width: 767px) {
+    #themes-item {
+        flex-direction: column; /* Ubah ke kolom untuk mobile */
+        align-items: center; /* Rata tengah untuk mobile */
+    }
+
+    .theme-card {
+        width: 100%; /* Full width cards on small screens */
+        margin: 10px 0; /* Reduce margin for better spacing */
+    }
+
+    .theme-preview {
+        height: 500px; /* Tinggi lebih pendek untuk mobile */
+    }
+
+    #slogan {
+        background-image: url('background2.JPG');
+        justify-content: end;
+        align-content: end;
+    }
+    #slogan h1 {
+        font-size: 2rem; /* Adjust font size for smaller screens */
+    }
+
+    #slogan p {
+        font-size: 1rem;
+    }
+}
