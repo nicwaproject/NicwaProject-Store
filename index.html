@@ -6,49 +6,221 @@
     <title>NicwaProject | Find the Best Way to Invite</title>
     <meta property="og:title" content="NicwaProject">
     <meta property="og:description" content="Find the Best Way to Invite">
-    <meta property="og:image" content="background1.JPG"> <!-- Specify the URL of your preview image -->
+    <meta property="og:image" content="share.png"> <!-- Specify the URL of your preview image -->
     <meta property="og:image:width" content="50"> <!-- Width of the image in pixels -->
     <meta property="og:image:height" content="50"> <!-- Height of the image in pixels -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="icon" href="logo2.svg" type="image/x-icon">
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Macondo&display=swap" rel="stylesheet">
 </head>
 <body>
 
+    <!-- Navigation Bar -->
+    <header>
+      <nav class="navbar">
+          <div class="logo">
+              <a href="#">Nicwa Project</a>
+          </div>
+          <ul class="nav-links">
+              <li><a href="#slogan"><i class="fas fa-home"></i> Home</a></li>
+              <li><a href="#themes"><i class="fas fa-palette"></i> Themes</a></li>
+              <li><a href="#whatsapp-order"><i class="fas fa-shopping-cart"></i> Order</a></li>
+          </ul>
+          <div class="theme-toggle">
+              <button id="theme-button" onclick="toggleTheme()">🌞</button>
+          </div>
+          <div class="hamburger" onclick="toggleMenu()">
+              <span class="bar"></span>
+              <span class="bar"></span>
+              <span class="bar"></span>
+          </div>
+      </nav>
+    </header>
+
     <!-- Section 1: Slogan -->
     <section id="slogan">
-        <h1>Find the Best Way to Invite</h1>
-        <p>Create beautiful wedding invitations effortlessly.</p>
-        <span><a href="#themes" class="btn">Explore Themes</a></span>
+        <div class="slogan">
+            <h1>Find the Best Way to Invite</h1>
+            <p>Create beautiful wedding invitations effortlessly.</p>
+            <span><a href="#themes" class="btn">Explore Themes</a></span>
+        </div>
+        <div class="slogan-image">
+            <img src="envelopeweb.jpg" alt="flower image" class="flower-image">
+        </div>
     </section>
 
+    <section id="features">
+        <h2>Kelebihan Layanan Kami</h2>
+        <div class="features-container">
+          <div class="feature-item">
+            <i class="fas fa-mobile-alt"></i>
+            <h3>Responsif Design</h3>
+            <p>Desain undangan yang responsif dan terlihat indah di perangkat apa pun.</p>
+          </div>
+          <div class="feature-item">
+            <i class="fas fa-palette"></i>
+            <h3>Customizable Themes</h3>
+            <p>Pelanggan bisa memilih tema yang dapat disesuaikan dengan kebutuhan mereka.</p>
+          </div>
+          <div class="feature-item">
+            <i class="fas fa-bolt"></i>
+            <h3>Fast Loading Speed</h3>
+            <p>Undangan yang dioptimalkan untuk kecepatan sehingga tamu tidak perlu menunggu lama.</p>
+          </div>
+          <div class="feature-item">
+            <i class="fas fa-share-alt"></i>
+            <h3>Easy to Share</h3>
+            <p>Undangan mudah dibagikan melalui WhatsApp, email, atau media sosial.</p>
+          </div>
+          <div class="feature-item">
+            <i class="fas fa-wallet"></i>
+            <h3>Affordable Pricing</h3>
+            <p>Kami menawarkan harga yang bersaing untuk layanan undangan berkualitas tinggi.</p>
+          </div>
+          <div class="feature-item">
+            <i class="fas fa-clock"></i>
+            <h3>Fast Turnaround</h3>
+            <p>Proses pengerjaan cepat dan tepat waktu sesuai dengan kebutuhan acara Anda.</p>
+          </div>
+        </div>
+      </section>
+      
     <!-- Section 2: Themes -->
     <section id="themes">
-        <h2>Select Your Invitation Theme</h2>
+        <h2>Pilihan Tema</h2>
             <div id="themes-item">
             <!-- Theme 1 -->
             <div class="theme">
-                <h3>Elegant White</h3>
+                <h3>Tema 1</h3>
                 <iframe src="https://nicwaproject.github.io/Hafis-Retno-Wedding-Invitation/" frameborder="0" class="theme-preview"></iframe>
+                <div>
+                  <h4>Tema 1</h4>
+                  <p>Tema yang menghadirkan desain yang sederhana namun elegan.</p>
+                  <h5>Price List</h5>
+                  <ul>
+                    <li>Paket 1 (Tanpa Foto): Rp 35.000</li>
+                    <li>Paket 2 (Dengan Foto): Rp 55.000</li>
+                    <li>Paket 3 (Dengan Foto dan Video): Rp 85.000</li>
+                  </ul>
+                </div>
             </div>
         
             <!-- Theme 2 -->
             <div class="theme">
-                <h3>Romantic Pastel</h3>
+                <h3>Tema 2</h3>
                 <iframe src="https://nicwaproject.github.io/Zhapran-Fira-Tema-2-Wedding-Invitation-Basic/" frameborder="0" class="theme-preview"></iframe>
+                <div>
+                  <h4>Tema 2</h4>
+                  <p>Tema dengan sentuhan romantis ke dalam undangan pernikahan.</p>
+                  <h5>Price List</h5>
+                  <ul>
+                    <li>Paket 1 (Tanpa Foto): Rp 45.000</li>
+                    <li>Paket 2 (Dengan Foto): Rp 65.000</li>
+                    <li>Paket 3 (Dengan Foto dan Video): 90.000</li>
+                  </ul>
+                </div>
             </div>
         
             <!-- Theme 3 -->
             <div class="theme">
-                <h3>Classic Charm</h3>
+                <h3>Tema 3</h3>
                 <iframe src="https://nicwaproject.github.io/Zhapran-Fira-Tema-3-Wedding-Invitation/" frameborder="0" class="theme-preview"></iframe>
+                <div>
+                  <h4>Tema 3</h4>
+                  <p>Tema dengan sentuhan kemewahan dan keanggunan.</p>
+                  <h5>Price List</h5>
+                  <ul>
+                    <li>Paket 1 (Tanpa Foto): -</li>
+                    <li>Paket 2 (Dengan Foto): Rp 75.000</li>
+                    <li>Paket 3 (Dengan Foto dan Video): Rp 95.000</li>
+                  </ul>
+                </div>
             </div>
         </div>
     </section>
     
+    <section id="testimonials">
+      <h2>Testimoni Klien</h2>
+      <div class="testimonials-wrapper">
+        <div class="testimonials-container">
+          <div class="testimonial-item">
+            <img src="aji&rina.jpg" alt="Aji & Rina">
+            <div class="testimonial-content">
+              <h3>Aji & Rina</h3>
+              <p>"Kami sangat puas dengan undangan digital yang kami pesan! Desainnya indah dan responsif. Semua tamu kami memberikan pujian!"</p>
+            </div>
+          </div>
+          <div class="testimonial-item">
+            <img src="hafis&retno.jpeg" alt="Hafis & Retno">
+            <div class="testimonial-content">
+              <h3>Hafis & Retno</h3>
+              <p>"Layanan yang cepat dan harga yang sangat terjangkau. Kami sangat merekomendasikan NicwaProject untuk undangan pernikahan digital!"</p>
+            </div>
+          </div>
+          <div class="testimonial-item">
+            <img src="zhapran&fira.JPG" alt="Zhapran & Fira">
+            <div class="testimonial-content">
+              <h3>Zhapran & Fira</h3>
+              <p>"Proses yang mudah dan hasil yang memuaskan. Kami sangat terbantu dengan undangan ini, terima kasih banyak!"</p>
+            </div>
+          </div>
+          <div class="testimonial-item">
+            <img src="ayu&agil.jpg" alt="Iyu & Agil">
+            <div class="testimonial-content">
+              <h3>Ayu & Agil</h3>
+              <p>"Desain undangan yang kami terima sangat sesuai dengan tema pernikahan kami, dan proses pemesanan sangat mudah. Sangat direkomendasikan!"</p>
+            </div>
+          </div>
+          <div class="testimonial-item">
+            <img src="imam&ainun.jpeg" alt="Imam & Ainun">
+            <div class="testimonial-content">
+              <h3>Imam & Ainun</h3>
+              <p>"Undangan pernikahan kami tampil sangat elegan dan mudah diakses oleh semua tamu, pengerjaannya juga sangat cepat! Terima kasih NicwaProject!"</p>
+            </div>
+          </div>
+        </div>
+        <!-- Pindah tombol di bawah kontainer testimoni -->
+        <div class="testimonial-nav">
+          <button id="prevBtn" class="nav-btn">Prev</button>
+          <button id="nextBtn" class="nav-btn">Next</button>
+        </div>
+      </div>
+    </section>            
+    
+    <section class="faq-section">
+      <h2>Frequently Asked Questions</h2>
+      <div class="faq-item">
+        <button class="faq-question">
+          Bagaimana cara memesan undangan?
+        </button>
+        <div class="faq-answer">
+          <p>Anda dapat memesan melalui tombol "Order Now" di website kami, yang akan mengarahkan Anda langsung ke WhatsApp untuk konsultasi dan detail pemesanan.</p>
+        </div>
+      </div>
+    
+      <div class="faq-item">
+        <button class="faq-question">
+          Kapan undanganku siap digunakan setelah memesan?
+        </button>
+        <div class="faq-answer">
+          <p>Undangan Anda akan siap dalam waktu 1-2 hari kerja setelah semua detail dan pembayaran telah kami terima. Kami selalu berusaha memberikan hasil secepat mungkin dengan tetap menjaga kualitas.</p>
+        </div>
+      </div>
 
+      <div class="faq-item">
+        <button class="faq-question">
+          Bisakah saya menyesuaikan desain atau tema setelah undangan selesai dibuat?
+        </button>
+        <div class="faq-answer">
+          <p>Anda dapat melakukan revisi kecil hingga 2 kali setelah undangan selesai, seperti perubahan teks atau warna. Untuk perubahan besar, silakan hubungi kami untuk detail lebih lanjut</p>
+        </div>
+      </div>
+    </section>
+    
     <!-- Section 3: Order Now -->
     <section id="whatsapp-order">
         <div class="order-container">
@@ -65,12 +237,9 @@
               </select>
               <button type="submit" id="order-button">Order via WhatsApp</button>
             </div>
-
           </form>
         </div>
-      </section>
-      
-      
+      </section>  
 
     <!-- Section 4: Footer -->
     <footer>
