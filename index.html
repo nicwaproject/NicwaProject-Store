@@ -222,24 +222,33 @@
     </section>
     
     <!-- Section 3: Order Now -->
-    <section id="whatsapp-order">
-        <div class="order-container">
-          <h2>Order Now</h2>
-          <form id="order-form">
-            <div class="form-group">
-              <input type="text" id="name" placeholder="Enter your name" required>
-            </div>
-              <select id="product" required>
-                <option value="" disabled selected>Select a theme</option>
-                <option value="Elegant White">Elegant White</option>
-                <option value="Romantic Pastel">Romantic Pastel</option>
-                <option value="Classic Charm">Classic Charm</option>
-              </select>
-              <button type="submit" id="order-button">Order via WhatsApp</button>
-            </div>
-          </form>
-        </div>
-      </section>  
+<section id="whatsapp-order">
+      <div class="order-container">
+        <h2>Order Now</h2>
+        <form id="order-form">
+          <div class="form-group">
+            <input type="text" id="name" placeholder="Nama" required>
+          </div>
+          <div class="form-group">
+            <select id="theme" required>
+              <option value="" disabled selected>Pilih Tema</option>
+              <option value="Theme 1">Tema 1</option>
+              <option value="Theme 2">Tema 2</option>
+              <option value="Theme 3">Tema 3</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <select id="package" required>
+              <option value="" disabled selected>Pilih Paket</option>
+              <option value="Package 1">Paket 1</option>
+              <option value="Package 2">Paket 2</option>
+              <option value="Package 3">Paket 3</option>
+            </select>
+          </div>
+          <button type="submit" id="order-button">Order via WhatsApp</button>
+        </form>
+      </div>
+    </section>      
 
     <!-- Section 4: Footer -->
     <footer>
