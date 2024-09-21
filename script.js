@@ -7,7 +7,7 @@ document.getElementById('order-form').addEventListener('submit', function(event)
   var package = document.getElementById('package').value;
 
   // Format the message
-  var message = `Hello, nama saya ${name}. Aku ingin memesan undangan dengan:\n- Tema: ${theme}\n- Paket: ${package}`;
+  var message = `Assalamualaikum, nama saya ${name}. Aku ingin memesan undangan dengan:\n- Tema: ${theme}\n- Paket: ${package}`;
 
   // WhatsApp Business number (include country code, e.g., +6281234567890)
   var phoneNumber = '+6285974176110';
